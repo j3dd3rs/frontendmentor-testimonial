@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20rem 0;
+  max-width: 144rem;
+}
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  max-width: 120rem;
+}
+
+/* Base Card */
+.testimonial-card {
+  padding: 2rem 3.3rem 2rem 3.3rem;
+  border-radius: 10px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.186);
+  position: relative;
+  z-index: -2;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 0;
+  right: 6rem;
+  z-index: -1;
+}
+
+.author-container {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.author-img {
+  height: 3.4rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-size: 1.4rem;
+  /* font-weight: 400; */
+}
+
+.author-tag {
+  font-size: 1.2rem;
+}
+
+.testimonial-highlight {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Purple card */
+.purple-card {
+  color: hsl(260, 100%, 95%);
+  background-color: hsl(263, 55%, 52%);
+}
+
+.border-purple {
+  border: 2px solid hsl(264, 82%, 80%);
+}
+
+/* Grey card */
+.grey-card {
+  color: hsl(214, 17%, 92%);
+  background-color: hsl(217, 19%, 35%);
+}
+
+.border-grey {
+  border: 2px solid hsl(214, 17%, 92%);
+}
+
+/* White card */
+.white-card {
+  color: hsl(224, 10%, 45%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* Black card */
+.black-card {
+  color: hsl(0, 0%, 81%);
+  background-color: hsl(0, 0%, 7%);
+}
+
+.border-purple {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+/* Grid Layout */
+.grid--4-cols div:first-child {
+  grid-column: span 2;
+}
+
+.grid--4-cols div:nth-child(3) {
+  grid-column: 1;
+}
+
+.grid--4-cols div:nth-child(4) {
+  grid-column: span 2;
+}
+
+.grid--4-cols div:last-child {
+  grid-column: 4;
+  grid-row: 1 / -1;
+}
